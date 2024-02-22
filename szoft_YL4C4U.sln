@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{87422CFD-A4E6-465C-81E2-567BB231ADDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzorzoTabla", "SzorzoTabla\SzorzoTabla.csproj", "{5C966B99-DA40-469A-9985-87114D9C7711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pascal", "Pascal\Pascal.csproj", "{E6C105ED-EE8E-4ADF-824F-C28A8B0B2CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87422CFD-A4E6-465C-81E2-567BB231ADDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87422CFD-A4E6-465C-81E2-567BB231ADDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87422CFD-A4E6-465C-81E2-567BB231ADDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87422CFD-A4E6-465C-81E2-567BB231ADDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C966B99-DA40-469A-9985-87114D9C7711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C966B99-DA40-469A-9985-87114D9C7711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C966B99-DA40-469A-9985-87114D9C7711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C966B99-DA40-469A-9985-87114D9C7711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C105ED-EE8E-4ADF-824F-C28A8B0B2CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C105ED-EE8E-4ADF-824F-C28A8B0B2CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C105ED-EE8E-4ADF-824F-C28A8B0B2CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C105ED-EE8E-4ADF-824F-C28A8B0B2CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {530E26C6-E45E-4BA3-9516-3CCF0C37F978}
+	EndGlobalSection
+EndGlobal
