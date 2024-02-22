@@ -17,7 +17,7 @@ namespace Pascal
                     Button b = new Button();
                     b.Width = m;
                     b.Height = m;
-                    b.Left = j * m;
+                    b.Left = j * m+Width/2;
                     b.Top = i * m;
                     Controls.Add(b);
                     int p = Faktorialis(i) / (Faktorialis(j) * (Faktorialis(i - j)));
