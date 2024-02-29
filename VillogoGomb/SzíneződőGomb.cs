@@ -14,6 +14,12 @@ namespace VillogoGomb
             Height = meret;
             Width = meret;
             Click += OnClick;
+            Click += Vissza;
+        }
+
+        private void Vissza(object? sender, EventArgs e)
+        {
+            BackColor = DefaultBackColor;
         }
 
         private void OnClick(object? sender, EventArgs e)
