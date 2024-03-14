@@ -32,6 +32,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             fileSystemWatcher1 = new FileSystemWatcher();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
@@ -44,7 +45,7 @@
             dataGridView1.Location = new Point(12, 331);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(776, 150);
+            dataGridView1.Size = new Size(1082, 150);
             dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -58,9 +59,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(499, 30);
+            pictureBox1.Location = new Point(499, 51);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(289, 295);
+            pictureBox1.Size = new Size(595, 274);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -69,11 +70,22 @@
             fileSystemWatcher1.EnableRaisingEvents = true;
             fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // button1
+            // 
+            button1.Location = new Point(409, 292);
+            button1.Name = "button1";
+            button1.Size = new Size(84, 23);
+            button1.TabIndex = 6;
+            button1.Text = "Következő";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 493);
+            ClientSize = new Size(1106, 493);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
@@ -93,5 +105,6 @@
         private Label label1;
         private PictureBox pictureBox1;
         private FileSystemWatcher fileSystemWatcher1;
+        private Button button1;
     }
 }

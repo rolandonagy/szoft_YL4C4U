@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace HajósTeszt
@@ -7,7 +8,7 @@ namespace HajósTeszt
 
         List<Kérdés> OsszesKerdes;
         List<Kérdés> AktivKerdes;
-        int aktKerdes = 5;
+        int aktKerdes = 0;
         VálaszGomb válaszgomb1;
         VálaszGomb válaszgomb2;
         VálaszGomb válaszgomb3;
@@ -16,17 +17,85 @@ namespace HajósTeszt
             InitializeComponent();
             válaszgomb1 = new VálaszGomb();
             válaszgomb1.Top = 50;
+            válaszgomb1.Click += Válaszgomb1_Click;
             Controls.Add(válaszgomb1);
 
             válaszgomb2 = new VálaszGomb();
             válaszgomb2.Top = 150;
+            válaszgomb2.Click += Válaszgomb2_Click;
             Controls.Add(válaszgomb2);
 
             válaszgomb3 = new VálaszGomb();
             válaszgomb3.Top = 250;
+            válaszgomb3.Click += Válaszgomb3_Click;
             Controls.Add(válaszgomb3);
         }
 
+        private void Válaszgomb3_Click(object? sender, EventArgs e)
+        {
+            switch (AktivKerdes[aktKerdes].HelyesVálasz)
+            {
+                case 1:
+                    válaszgomb1.BackColor = Color.Red;
+                    válaszgomb2.BackColor = Color.Red;
+                    válaszgomb3.BackColor = Color.Green;
+                    break;
+                case 2:
+                    válaszgomb2.BackColor = Color.Red;
+                    válaszgomb3.BackColor = Color.Green;
+                    válaszgomb1.BackColor = Color.Red;
+                    break;
+                case 3:
+                    válaszgomb3.BackColor = Color.Green;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void Válaszgomb2_Click(object? sender, EventArgs e)
+        {
+            switch (AktivKerdes[aktKerdes].HelyesVálasz)
+            {
+                case 1:
+                    válaszgomb1.BackColor = Color.Red;
+                    válaszgomb2.BackColor = Color.Green;
+                    válaszgomb3.BackColor = Color.Red;
+                    break;
+                case 2:
+                    válaszgomb2.BackColor = Color.Green;
+                    break;
+                case 3:
+                    válaszgomb3.BackColor = Color.Red;
+                    válaszgomb2.BackColor = Color.Green;
+                    válaszgomb1.BackColor = Color.Red;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void Válaszgomb1_Click(object? sender, EventArgs e)
+        {
+            switch (AktivKerdes[aktKerdes].HelyesVálasz)
+            {
+                case 1:
+                    válaszgomb1.BackColor = Color.Green;
+                    break;
+                case 2:
+                    válaszgomb2.BackColor = Color.Red;
+                    válaszgomb1.BackColor = Color.Green;
+                    válaszgomb3.BackColor = Color.Red;
+                    break;
+                case 3:
+                    válaszgomb3.BackColor = Color.Red;
+                    válaszgomb2.BackColor = Color.Red;
+                    válaszgomb1.BackColor = Color.Green;
+                    break;
+                default:
+                    break;
+            }
+        }
 
         List<Kérdés> Beolvasas()
         {
@@ -59,7 +128,7 @@ namespace HajósTeszt
             }
             return kérdés;
         }
-        
+
         void KérdésMegjelenítés(Kérdés kérdés)
         {
             label1.Text = kérdés.KérdésSzöveg;
@@ -75,6 +144,7 @@ namespace HajósTeszt
             {
                 pictureBox1.Visible = false;
             }
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -86,16 +156,24 @@ namespace HajósTeszt
                 OsszesKerdes.RemoveAt(0);
             }
             dataGridView1.DataSource = AktivKerdes;
-            
-            for (int i = 0; i < 7; i++)
-            {
-                KérdésMegjelenítés(AktivKerdes[i]);
-            }
-            
+            KérdésMegjelenítés(AktivKerdes[aktKerdes]);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            KérdésMegjelenítés(AktivKerdes[aktKerdes++]);
+            if (aktKerdes == 7)
+            {
+                aktKerdes = 0;
+            }
+            válaszgomb1.BackColor = Color.LightGray;
+            válaszgomb2.BackColor = Color.LightGray;
+            válaszgomb3.BackColor = Color.LightGray;
 
         }
     }
