@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzorzoTabla", "SzorzoTabla\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pascal", "Pascal\Pascal.csproj", "{E6C105ED-EE8E-4ADF-824F-C28A8B0B2CE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{AB8D6D7C-B747-4CDB-AB17-9616315842B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{AB8D6D7C-B747-4CDB-AB17-9616315842B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "randomgombok", "randomgombok\randomgombok.csproj", "{0BF11F86-B577-480A-A664-86E6B9BF7815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "randomgombok", "randomgombok\randomgombok.csproj", "{0BF11F86-B577-480A-A664-86E6B9BF7815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karacsonyfa", "Karacsonyfa\Karacsonyfa.csproj", "{5AD62ABA-5DF5-43BD-B861-21867A459AC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Karacsonyfa", "Karacsonyfa\Karacsonyfa.csproj", "{5AD62ABA-5DF5-43BD-B861-21867A459AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HajósTeszt", "HajósTeszt\HajósTeszt.csproj", "{23EF47FA-82A9-4C29-812C-42AB9D6D8174}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5AD62ABA-5DF5-43BD-B861-21867A459AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD62ABA-5DF5-43BD-B861-21867A459AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD62ABA-5DF5-43BD-B861-21867A459AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
