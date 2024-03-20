@@ -36,17 +36,18 @@ namespace HajósTeszt
             switch (AktivKerdes[aktKerdes].HelyesVálasz)
             {
                 case 1:
-                    válaszgomb1.BackColor = Color.Red;
+                    válaszgomb3.BackColor = Color.Red;
                     válaszgomb2.BackColor = Color.Red;
-                    válaszgomb3.BackColor = Color.Green;
+                    válaszgomb1.BackColor = Color.Green;
                     break;
                 case 2:
-                    válaszgomb2.BackColor = Color.Red;
-                    válaszgomb3.BackColor = Color.Green;
+                    válaszgomb3.BackColor = Color.Red;
+                    válaszgomb2.BackColor = Color.Green;
                     válaszgomb1.BackColor = Color.Red;
                     break;
                 case 3:
                     válaszgomb3.BackColor = Color.Green;
+                    AktivKerdes[aktKerdes].HelyesVálaszokSzáma++;
                     break;
                 default:
                     break;
@@ -58,16 +59,17 @@ namespace HajósTeszt
             switch (AktivKerdes[aktKerdes].HelyesVálasz)
             {
                 case 1:
-                    válaszgomb1.BackColor = Color.Red;
-                    válaszgomb2.BackColor = Color.Green;
+                    válaszgomb2.BackColor = Color.Red;
+                    válaszgomb1.BackColor = Color.Green;
                     válaszgomb3.BackColor = Color.Red;
                     break;
                 case 2:
                     válaszgomb2.BackColor = Color.Green;
+                    AktivKerdes[aktKerdes].HelyesVálaszokSzáma++;
                     break;
                 case 3:
-                    válaszgomb3.BackColor = Color.Red;
-                    válaszgomb2.BackColor = Color.Green;
+                    válaszgomb2.BackColor = Color.Red;
+                    válaszgomb3.BackColor = Color.Green;
                     válaszgomb1.BackColor = Color.Red;
                     break;
                 default:
@@ -81,16 +83,17 @@ namespace HajósTeszt
             {
                 case 1:
                     válaszgomb1.BackColor = Color.Green;
+                    AktivKerdes[aktKerdes].HelyesVálaszokSzáma++;
                     break;
                 case 2:
-                    válaszgomb2.BackColor = Color.Red;
-                    válaszgomb1.BackColor = Color.Green;
+                    válaszgomb1.BackColor = Color.Red;
+                    válaszgomb2.BackColor = Color.Green;
                     válaszgomb3.BackColor = Color.Red;
                     break;
                 case 3:
-                    válaszgomb3.BackColor = Color.Red;
+                    válaszgomb1.BackColor = Color.Red;
                     válaszgomb2.BackColor = Color.Red;
-                    válaszgomb1.BackColor = Color.Green;
+                    válaszgomb3.BackColor = Color.Green;
                     break;
                 default:
                     break;
@@ -174,6 +177,12 @@ namespace HajósTeszt
             válaszgomb1.BackColor = Color.LightGray;
             válaszgomb2.BackColor = Color.LightGray;
             válaszgomb3.BackColor = Color.LightGray;
+            dataGridView1.Refresh();
+            if (AktivKerdes[aktKerdes].HelyesVálaszokSzáma == 3)
+            {
+                AktivKerdes[aktKerdes] = OsszesKerdes[0];
+            }
+            dataGridView1.Refresh();
 
         }
     }
