@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "randomgombok", "randomgombo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Karacsonyfa", "Karacsonyfa\Karacsonyfa.csproj", "{5AD62ABA-5DF5-43BD-B861-21867A459AC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HajósTeszt", "HajósTeszt\HajósTeszt.csproj", "{23EF47FA-82A9-4C29-812C-42AB9D6D8174}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HajósTeszt", "HajósTeszt\HajósTeszt.csproj", "{23EF47FA-82A9-4C29-812C-42AB9D6D8174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KigyosJatek", "KigyosJatek\KigyosJatek.csproj", "{9EEAF618-9AC0-4865-8AE8-4C35E33E267C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23EF47FA-82A9-4C29-812C-42AB9D6D8174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEAF618-9AC0-4865-8AE8-4C35E33E267C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEAF618-9AC0-4865-8AE8-4C35E33E267C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEAF618-9AC0-4865-8AE8-4C35E33E267C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEAF618-9AC0-4865-8AE8-4C35E33E267C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
