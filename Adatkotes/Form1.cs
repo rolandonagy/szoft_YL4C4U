@@ -40,11 +40,17 @@ namespace Adatkotes
 
         private void mentes_Click(object sender, EventArgs e)
         {
-            using (var writer = new StreamWriter("european_countries.csv"))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            SaveFileDialog s = new SaveFileDialog();
+            if (s.ShowDialog()==DialogResult.OK)
             {
-                csv.WriteRecords(l);
-            };
+                using (var writer = new StreamWriter(s.FileName))
+                using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+                {
+                    csv.WriteRecords(l);
+                };
+            }
+
+            
         }
     }
 }
